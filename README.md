@@ -10,7 +10,11 @@ A simple Node.js + Express API for retrieving job listings with optional filters
 npm install
 ```
 
-### 2. Start the Server
+### 2. ENV
+
+Add the env provided in mail
+
+### 3. Start the Server
 
 ```bash
 npm start
