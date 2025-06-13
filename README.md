@@ -12,7 +12,9 @@ npm install
 
 ### 2. ENV
 
+```bash
 Add the env provided in mail
+```
 
 ### 3. Start the Server
 
