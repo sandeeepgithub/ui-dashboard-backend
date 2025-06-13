@@ -1,4 +1,4 @@
-const JobModel = require("../models/JobModel.js");
+const JobModel = require("../models/jobModel.js");
 const catchAsyncError = require("../utils/catchAsyncErrors.js");
 
 exports.getJobs = catchAsyncError(async (req, res, next) => {
