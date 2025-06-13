@@ -1,4 +1,4 @@
-const Job = require("../models/JobModel");
+const JobModel = require("../models/JobModel");
 const catchAsyncError = require("../utils/catchAsyncErrors");
 
 exports.getJobs = catchAsyncError(async (req, res, next) => {
@@ -40,8 +40,8 @@ exports.getJobs = catchAsyncError(async (req, res, next) => {
     };
   }
 
-  const jobs = await Job.find(queryObj);
-  const totalJobs = await Job.countDocuments();
+  const jobs = await JobModel.find(queryObj);
+  const totalJobs = await JobModel.countDocuments();
 
   let message = "success";
   if (jobs.length === 0) {
